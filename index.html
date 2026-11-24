@@ -4,209 +4,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aagnes | Portfolio</title>
+    <title>Aagnes — Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <a href="#home" class="logo">Aagnes<span>.</span></a>
+<header class="navbar">
+    <a href="#home" class="logo">aagnes<span>.</span></a>
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certificates</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Expertise</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
+
+    <span class="nav-note">PORTFOLIO / 2026</span>
 </header>
 
 <main>
 
-<!-- HOME SECTION -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <p class="eyebrow">WELCOME TO MY PERSONAL PORTFOLIO</p>
+<!-- HERO -->
+<section class="hero" id="home">
 
-        <h1>Hello, I'm <span>Aagnes.</span></h1>
+    <div class="hero-left">
+        <p class="eyebrow">HELLO, I'M AAGNES</p>
 
-        <h2>IMCA Student & Cybersecurity Enthusiast</h2>
+        <h1>
+            A little about<br>
+            <span>my world.</span>
+        </h1>
 
         <p class="hero-description">
-            Exploring technology, building new skills and
-            discovering the world of cybersecurity.
-            Welcome to my little corner of the digital world.
+            An IMCA student with an interest in technology,
+            cybersecurity and the endless possibilities of
+            the digital world.
         </p>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">Explore My Work</a>
-            <a href="cv.pdf" class="btn secondary-btn" download>Download CV ↓</a>
+        <a href="#about" class="text-link">
+            GET TO KNOW ME <span>↗</span>
+        </a>
+    </div>
+
+    <div class="hero-right">
+        <div class="photo-frame">
+            <img src="profile.jpg" alt="Portrait of Aagnes">
         </div>
+        <p class="photo-note">Curiosity is where everything begins.</p>
     </div>
 
-    <div class="hero-image">
-        <img src="profile.jpg" alt="Aagnes profile photo">
-        <div class="image-caption">Curious mind. Creative spirit.</div>
+    <div class="hero-bottom">
+        <span>STUDENT · TECHNOLOGY ENTHUSIAST</span>
+        <a href="#about">SCROLL TO EXPLORE ↓</a>
     </div>
+
 </section>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="section">
-    <p class="eyebrow">GET TO KNOW ME</p>
-    <h2 class="section-title">About Me</h2>
+<!-- ABOUT -->
+<section class="content-section" id="about">
 
-    <div class="about-content">
-        <p>
-            I am Aagnes, currently pursuing an Integrated Master
-            of Computer Applications (IMCA) at Rajagiri College
-            of Social Sciences.
-        </p>
-
-        <p>
-            I am interested in technology, programming and
-            cybersecurity. I enjoy exploring new concepts,
-            developing my technical knowledge and learning
-            how technology can solve real-world problems.
-        </p>
-
-        <p>
-            My goal is to continuously learn, improve my skills
-            and grow as a technology professional.
-        </p>
-    </div>
-</section>
-
-<!-- EDUCATION SECTION -->
-<section id="education" class="section alternate">
-    <p class="eyebrow">MY ACADEMIC JOURNEY</p>
-    <h2 class="section-title">Education</h2>
-
-    <div class="info-card">
-        <span class="card-number">01</span>
-        <div>
-            <h3>Integrated Master of Computer Applications</h3>
-            <p>Rajagiri College of Social Sciences</p>
-            <span class="status">Currently Pursuing</span>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section id="skills" class="section">
-    <p class="eyebrow">WHAT I'M LEARNING</p>
-    <h2 class="section-title">Technical Skills</h2>
-
-    <p class="section-intro">
-        My current areas of learning and technical interests.
-    </p>
-
-    <div class="skills-grid">
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Java</div>
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">Cybersecurity</div>
-        <div class="skill-card">DBMS & SQL</div>
-        <div class="skill-card">Web Development</div>
-        <div class="skill-card">Problem Solving</div>
-    </div>
-</section>
-
-<!-- CERTIFICATIONS SECTION -->
-<section id="certifications" class="section alternate">
-    <p class="eyebrow">MY ACHIEVEMENTS</p>
-    <h2 class="section-title">Certifications</h2>
-
-    <div class="certificate-card">
-        <div class="certificate-icon">✦</div>
-        <div>
-            <h3>Cybersecurity Certification</h3>
-            <p>First certificate received</p>
-            <span class="status">Completed</span>
-        </div>
+    <div class="section-label">
+        <span>01</span>
+        <span>ABOUT ME</span>
     </div>
 
-    <div class="certificate-card">
-        <div class="certificate-icon">✧</div>
-        <div>
-            <h3>Cybersecurity Certification</h3>
-            <p>Second certificate</p>
-            <span class="status pending">Awaiting Certificate</span>
-        </div>
-    </div>
-</section>
+    <div class="section-body">
+        <h2 class="editorial-heading">
+            Learning today.<br>
+            <em>Growing every day.</em>
+        </h2>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section">
-    <p class="eyebrow">MY WORK</p>
-    <h2 class="section-title">Projects</h2>
-
-    <p class="section-intro">
-        A collection of academic and personal projects
-        developed during my learning journey.
-    </p>
-
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <span class="project-label">ACADEMIC PROJECT</span>
-            <h3>Trip Planner & Expense Splitter</h3>
+        <div class="about-text">
             <p>
-                A Java-based project designed to organise
-                trip details and help manage shared expenses.
+                I am Aagnes, currently pursuing an Integrated
+                Master of Computer Applications (IMCA) at
+                Rajagiri College of Social Sciences.
             </p>
-            <span class="project-tech">Java · Database</span>
-        </div>
 
-        <div class="project-card">
-            <span class="project-label">WEB DEVELOPMENT</span>
-            <h3>Personal Portfolio Website</h3>
             <p>
-                A personal website created using HTML and CSS
-                to showcase my education, skills and projects.
+                I am interested in technology, programming
+                and cybersecurity. I enjoy exploring new
+                concepts, learning practical skills and
+                understanding how digital systems work.
             </p>
-            <span class="project-tech">HTML · CSS · GitHub Pages</span>
-        </div>
 
-        <div class="project-card">
-            <span class="project-label">CYBERSECURITY</span>
-            <h3>Cybersecurity Learning</h3>
             <p>
-                Learning fundamental cybersecurity concepts
-                through training and certification programmes.
+                I believe every new skill is an opportunity
+                to grow, and I am always looking forward
+                to discovering something new.
             </p>
-            <span class="project-tech">Cybersecurity · Training</span>
         </div>
-
     </div>
+
 </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="section contact-section">
-    <p class="eyebrow">LET'S CONNECT</p>
-    <h2 class="section-title">Get In Touch</h2>
+<!-- EDUCATION -->
+<section class="content-section tinted" id="education">
 
-    <p>
-        Thank you for visiting my portfolio.
-        Feel free to connect with me.
-    </p>
+    <div class="section-label">
+        <span>02</span>
+        <span>EDUCATION</span>
+    </div>
 
-    <a href="mailto:YOUR_EMAIL@gmail.com" class="btn primary-btn">
-        Email Me
+    <div class="section-body">
+        <h2 class="section-title">Academic journey</h2>
+
+        <div class="timeline-item">
+            <span class="timeline-year">PRESENT</span>
+
+            <div>
+                <h3>Integrated Master of Computer Applications</h3>
+                <p>Rajagiri College of Social Sciences</p>
+                <span class="small-note">Currently pursuing</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="content-section" id="skills">
+
+    <div class="section-label">
+        <span>03</span>
+        <span>EXPERTISE</span>
+    </div>
+
+    <div class="section-body">
+        <h2 class="section-title">Things I'm exploring.</h2>
+
+        <p class="section-intro">
+            A growing collection of technical skills
+            and areas of interest.
+        </p>
+
+        <div class="skill-list">
+            <span>01 / Python</span>
+            <span>02 / Java</span>
+            <span>03 / HTML & CSS</span>
+            <span>04 / Cybersecurity</span>
+            <span>05 / Database Management</span>
+            <span>06 / Web Development</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="content-section tinted" id="certifications">
+
+    <div class="section-label">
+        <span>04</span>
+        <span>CERTIFICATIONS</span>
+    </div>
+
+    <div class="section-body">
+        <h2 class="section-title">Learning beyond classrooms.</h2>
+
+        <div class="certificate">
+            <span class="certificate-number">01</span>
+            <div>
+                <h3>Cybersecurity Certification</h3>
+                <p>First certificate received</p>
+            </div>
+            <span class="certificate-status">COMPLETED</span>
+        </div>
+
+        <div class="certificate">
+            <span class="certificate-number">02</span>
+            <div>
+                <h3>Cybersecurity Certification</h3>
+                <p>Second certificate awaited</p>
+            </div>
+            <span class="certificate-status pending">IN PROGRESS</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="content-section" id="projects">
+
+    <div class="section-label">
+        <span>05</span>
+        <span>SELECTED WORK</span>
+    </div>
+
+    <div class="section-body">
+        <h2 class="editorial-heading">
+            Ideas into<br>
+            <em>projects.</em>
+        </h2>
+
+        <div class="project-list">
+
+            <article class="project">
+                <div class="project-top">
+                    <span>01 / WEB DEVELOPMENT</span>
+                    <span>↗</span>
+                </div>
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A personal website created to introduce
+                    myself and showcase my academic journey,
+                    technical interests and work.
+                </p>
+                <span class="project-tools">HTML · CSS · GITHUB PAGES</span>
+            </article>
+
+            <article class="project">
+                <div class="project-top">
+                    <span>02 / CYBERSECURITY</span>
+                    <span>↗</span>
+                </div>
+                <h3>Cybersecurity Learning</h3>
+                <p>
+                    Exploring cybersecurity fundamentals
+                    through structured training and
+                    certification programmes.
+                </p>
+                <span class="project-tools">SECURITY · TECHNOLOGY</span>
+            </article>
+
+            <article class="project">
+                <div class="project-top">
+                    <span>03 / ACADEMIC WORK</span>
+                    <span>↗</span>
+                </div>
+                <h3>Academic Projects</h3>
+                <p>
+                    Practical projects developed as part
+                    of my computer applications studies.
+                </p>
+                <span class="project-tools">PROGRAMMING · DATABASES</span>
+            </article>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+
+    <p class="eyebrow">HAVE A QUESTION?</p>
+
+    <h2>Let's start a<br><em>conversation.</em></h2>
+
+    <a href="mailto:YOUR_EMAIL@gmail.com" class="contact-link">
+        YOUR_EMAIL@gmail.com ↗
     </a>
+
 </section>
 
 </main>
 
 <footer>
-    <p>Designed & Developed by Aagnes</p>
-    <p>© 2026 All Rights Reserved.</p>
+    <span>© 2026 AAGNES</span>
+    <span>MADE WITH CURIOSITY & CREATIVITY</span>
+    <a href="#home">BACK TO TOP ↑</a>
 </footer>
 
 </body>
