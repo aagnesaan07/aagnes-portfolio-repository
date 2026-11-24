@@ -1,5 +1,7 @@
 
-/* EDITORIAL MINIMAL PORTFOLIO */
+/* ==================================
+   EDITORIAL MINIMAL PORTFOLIO
+================================== */
 
 * {
     margin: 0;
@@ -22,6 +24,7 @@ body {
     color: var(--ink);
     font-family: 'DM Sans', sans-serif;
     line-height: 1.8;
+    overflow-x: hidden;
 }
 
 a {
@@ -36,8 +39,8 @@ section {
 /* NAVIGATION */
 
 .navbar {
-    height: 82px;
-    padding: 0 8%;
+    min-height: 82px;
+    padding: 15px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,7 +63,8 @@ section {
 
 .navbar nav {
     display: flex;
-    gap: 27px;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .navbar nav a {
@@ -79,19 +83,24 @@ section {
     color: var(--muted);
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero {
+    width: 100%;
+    max-width: 1200px;
     min-height: 680px;
-    padding: 90px 12% 65px;
+    margin: 0 auto;
+    padding: 90px 7%;
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 70px;
-    position: relative;
+    justify-items: center;
+    gap: 60px;
 }
 
 .hero-left {
+    width: 100%;
+    max-width: 520px;
     animation: appear 1s ease both;
 }
 
@@ -104,7 +113,7 @@ section {
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(60px, 7vw, 92px);
+    font-size: clamp(55px, 6vw, 85px);
     font-weight: 400;
     line-height: 1.08;
     margin: 30px 0;
@@ -140,16 +149,20 @@ section {
     color: var(--accent);
 }
 
-/* MINIMALIST INITIAL DESIGN */
+/* INITIAL LETTER DESIGN - NO PROFILE PHOTO */
 
 .hero-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     animation: appear 1.3s ease both;
 }
 
 .initial-frame {
     width: 100%;
-    max-width: 365px;
-    height: 455px;
+    max-width: 340px;
+    height: 430px;
     background: #eae4d9;
     border: 10px solid white;
     display: flex;
@@ -163,7 +176,7 @@ section {
     font-family: 'Playfair Display', serif;
     font-size: 190px;
     font-style: italic;
-    color: #a58b6d;
+    color: var(--accent);
     line-height: 1;
 }
 
@@ -171,7 +184,7 @@ section {
     font-size: 10px;
     letter-spacing: 7px;
     margin-top: 20px;
-    color: #827e73;
+    color: var(--muted);
 }
 
 .photo-note {
@@ -180,14 +193,16 @@ section {
     font-style: italic;
     font-size: 13px;
     margin-top: 15px;
-    text-align: right;
+    text-align: center;
 }
+
 /* CONTENT SECTIONS */
 
 .content-section {
-    padding: 115px 12%;
+    width: 100%;
+    padding: 110px max(7%, calc((100% - 1100px) / 2));
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 180px minmax(0, 1fr);
     gap: 60px;
     border-top: 1px solid var(--line);
 }
@@ -251,7 +266,7 @@ section {
 
 .timeline-item {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 100px minmax(0, 1fr);
     gap: 25px;
     border-top: 1px solid var(--line);
     padding: 30px 0;
@@ -304,7 +319,7 @@ section {
 
 .certificate {
     display: grid;
-    grid-template-columns: 60px 1fr auto;
+    grid-template-columns: 60px minmax(0, 1fr) auto;
     align-items: center;
     gap: 20px;
     padding: 28px 0;
@@ -386,7 +401,7 @@ section {
 /* CONTACT */
 
 .contact-section {
-    padding: 125px 15%;
+    padding: 110px 7%;
     text-align: center;
     background: #e9e4da;
     border-top: 1px solid var(--line);
@@ -394,7 +409,7 @@ section {
 
 .contact-section h2 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(48px, 7vw, 78px);
+    font-size: clamp(45px, 6vw, 75px);
     line-height: 1.15;
     font-weight: 400;
     margin: 25px 0;
@@ -410,7 +425,7 @@ section {
 /* FOOTER */
 
 footer {
-    padding: 25px 8%;
+    padding: 25px 7%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -420,7 +435,7 @@ footer {
     color: var(--muted);
 }
 
-/* ANIMATION */
+/* ANIMATIONS */
 
 @keyframes appear {
     from {
@@ -434,9 +449,10 @@ footer {
     }
 }
 
-/* MOBILE */
+/* TABLET */
 
 @media (max-width: 950px) {
+
     .nav-note {
         display: none;
     }
@@ -449,25 +465,32 @@ footer {
     }
 
     .navbar nav {
-        flex-wrap: wrap;
         gap: 15px;
     }
 
     .hero {
-        padding: 75px 7%;
-        gap: 40px;
+        padding: 75px 6%;
+        gap: 35px;
     }
 
     .content-section {
         padding: 85px 7%;
-        grid-template-columns: 110px 1fr;
-        gap: 30px;
+        grid-template-columns: 130px minmax(0, 1fr);
+        gap: 35px;
+    }
+
+    .editorial-heading {
+        font-size: 50px;
     }
 }
 
+/* MOBILE */
+
 @media (max-width: 650px) {
+
     .navbar {
         justify-content: center;
+        text-align: center;
     }
 
     .navbar nav {
@@ -477,7 +500,16 @@ footer {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        padding-bottom: 100px;
+        padding: 65px 7%;
+        gap: 45px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 12vw, 65px);
     }
 
     .hero-description {
@@ -489,41 +521,44 @@ footer {
         width: 100%;
     }
 
-    .photo-frame {
-        margin: auto;
+    .initial-frame {
         max-width: 290px;
         height: 360px;
+    }
+
+    .initial-frame span {
+        font-size: 150px;
     }
 
     .photo-note {
         text-align: center;
     }
 
-    .hero-bottom {
-        left: 7%;
-        right: 7%;
-        font-size: 8px;
-    }
-
     .content-section {
         display: block;
-        padding: 75px 7%;
+        padding: 70px 7%;
     }
 
     .section-label {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     .editorial-heading {
-        font-size: 45px;
+        font-size: 43px;
     }
 
     .section-title {
         font-size: 36px;
     }
 
+    .timeline-item {
+        grid-template-columns: 75px minmax(0, 1fr);
+        gap: 15px;
+    }
+
     .certificate {
-        grid-template-columns: 40px 1fr;
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 12px;
     }
 
     .certificate-status {
@@ -534,16 +569,23 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .contact-section {
+        padding: 80px 7%;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
     }
 }
 
-/* REDUCED MOTION ACCESSIBILITY */
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
         scroll-behavior: auto !important;
         animation: none !important;
         transition: none !important;
